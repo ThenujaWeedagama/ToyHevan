@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Cosmic Hero Figurine",
+    "category": "Figurines",
+    "price": 18.99,
+    "emoji": "\ud83e\uddb8",
+    "description": "A bold collectible hero figurine for any display shelf."
+  },
+  {
+    "id": 2,
+    "name": "Mystery Mini Dragon",
+    "category": "Figurines",
+    "price": 14.5,
+    "emoji": "\ud83d\udc09",
+    "description": "A charming fantasy dragon miniature with mystery-box energy."
+  },
+  {
+    "id": 3,
+    "name": "Rocket Explorer",
+    "category": "Toys",
+    "price": 24.99,
+    "emoji": "\ud83d\ude80",
+    "description": "An imaginative space toy ready for intergalactic adventures."
+  },
+  {
+    "id": 4,
+    "name": "Build-It Racer",
+    "category": "Toys",
+    "price": 21.75,
+    "emoji": "\ud83c\udfc1",
+    "description": "A colourful construction racer for creative young builders."
+  },
+  {
+    "id": 5,
+    "name": "Castle Quest",
+    "category": "Board Games",
+    "price": 32.0,
+    "emoji": "\ud83c\udff0",
+    "description": "A strategic fantasy board game packed with quests and choices."
+  },
+  {
+    "id": 6,
+    "name": "Galaxy Traders",
+    "category": "Board Games",
+    "price": 28.49,
+    "emoji": "\ud83c\udf0c",
+    "description": "Trade, explore and compete across a playful galaxy."
+  },
+  {
+    "id": 7,
+    "name": "Classic Red Racer",
+    "category": "Diecast Cars",
+    "price": 16.95,
+    "emoji": "\ud83c\udfce\ufe0f",
+    "description": "A sleek miniature racing icon made for collectors."
+  },
+  {
+    "id": 8,
+    "name": "Vintage Blue Coupe",
+    "category": "Diecast Cars",
+    "price": 19.25,
+    "emoji": "\ud83d\ude99",
+    "description": "A retro-inspired diecast coupe with timeless shelf appeal."
+  }
+]

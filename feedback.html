@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback &amp; Support — Toy Haven</title>
+<link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#14162b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="index.html" class="brand"><span class="brand-mark">TH</span>Toy Haven</a>
+    <button class="nav-toggle js-nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav-menu js-nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Shop</a></li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="feedback.html">Support</a></li>
+        <li><a href="cart.html" class="nav-cart">🛒 Cart <span class="cart-badge" data-cart-badge>0</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start;">
+    <div>
+      <h1 style="margin-bottom:6px;">Feedback &amp; Support</h1>
+      <p style="margin-bottom:26px;">Spotted an issue, or have a suggestion for the shelf? Tell us.</p>
+
+      <form class="form-card" id="feedbackForm" novalidate>
+        <div class="field" id="fbFieldName">
+          <label for="fbName">Name</label>
+          <input type="text" id="fbName" name="name" autocomplete="name">
+          <p class="field-error">Enter your name.</p>
+        </div>
+        <div class="field" id="fbFieldEmail">
+          <label for="fbEmail">Email</label>
+          <input type="email" id="fbEmail" name="email" autocomplete="email">
+          <p class="field-error">Enter a valid email address.</p>
+        </div>
+        <div class="field" id="fbFieldMessage">
+          <label for="fbMessage">Message</label>
+          <textarea id="fbMessage" name="message" placeholder="How can we help?"></textarea>
+          <p class="field-error">Tell us a little about the issue.</p>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send message</button>
+        <p id="fbConfirmation" style="margin:14px 0 0;color:var(--mint);font-weight:600;display:none;">✓ Thanks — your message has been received.</p>
+      </form>
+    </div>
+
+    <div>
+      <h2 style="margin-bottom:20px;">Frequently asked questions</h2>
+      <div class="accordion" id="faqAccordion"></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© <span class="js-year"></span> Toy Haven. All rights reserved.</span>
+      <span>Built for collectors, by collectors.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/feedback.js"></script>
+</body>
+</html>

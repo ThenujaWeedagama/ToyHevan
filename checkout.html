@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout — Toy Haven</title>
+<link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#14162b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="index.html" class="brand"><span class="brand-mark">TH</span>Toy Haven</a>
+    <button class="nav-toggle js-nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav-menu js-nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Shop</a></li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="feedback.html">Support</a></li>
+        <li><a href="cart.html" class="nav-cart">🛒 Cart <span class="cart-badge" data-cart-badge>0</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <h1 style="margin-bottom:26px;">Checkout</h1>
+
+    <div id="checkoutEmpty" class="empty-state" hidden>
+      <h3>Nothing to check out yet</h3>
+      <p>Add some products to your cart first.</p>
+      <a href="products.html" class="btn btn-primary">Shop Now</a>
+    </div>
+
+    <div id="checkoutForm">
+      <form class="form-card" id="orderForm" novalidate>
+        <div class="field" id="fieldName">
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName" name="fullName" autocomplete="name">
+          <p class="field-error">Enter your full name.</p>
+        </div>
+
+        <div class="field" id="fieldEmail">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email">
+          <p class="field-error">Enter a valid email address.</p>
+        </div>
+
+        <div class="field" id="fieldAddress">
+          <label for="address">Delivery address</label>
+          <textarea id="address" name="address" autocomplete="street-address"></textarea>
+          <p class="field-error">Enter your delivery address.</p>
+        </div>
+
+        <div class="field" id="fieldPayment">
+          <label>Payment method</label>
+          <div class="pay-options">
+            <label class="pay-option is-selected">
+              <input type="radio" name="payment" value="Card" checked style="margin:0;">
+              Card
+            </label>
+            <label class="pay-option">
+              <input type="radio" name="payment" value="Cash on Delivery" style="margin:0;">
+              Cash on Delivery
+            </label>
+          </div>
+        </div>
+
+        <div class="order-summary-box">
+          <div class="summary-row"><span>Subtotal</span><span id="coSubtotal">$0.00</span></div>
+          <div class="summary-row"><span>Shipping</span><span id="coShipping">$0.00</span></div>
+          <div class="summary-row total"><span>Total due</span><span id="coTotal">$0.00</span></div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Place order</button>
+      </form>
+    </div>
+
+    <div class="success-panel" id="successPanel" hidden>
+      <div class="success-check">✓</div>
+      <h2>Order confirmed</h2>
+      <p style="max-width:44ch;margin:0 auto 22px;">Thanks<span id="successName"></span> — a confirmation has been added to your order history. Your Toy Haven shelf items are on the way.</p>
+      <a href="products.html" class="btn btn-secondary">Continue shopping</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© <span class="js-year"></span> Toy Haven. All rights reserved.</span>
+      <span>Built for collectors, by collectors.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>

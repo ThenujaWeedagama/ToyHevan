@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toy Haven — Figurines, Toys, Board Games & Diecast Cars</title>
+<meta name="description" content="Toy Haven is a collector-first shop for figurines, toys, board games and diecast model cars.">
+<link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#14162b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="index.html" class="brand"><span class="brand-mark">TH</span>Toy Haven</a>
+    <button class="nav-toggle js-nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav-menu js-nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Shop</a></li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="feedback.html">Support</a></li>
+        <li><a href="cart.html" class="nav-cart">🛒 Cart <span class="cart-badge" data-cart-badge>0</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-slides" id="heroSlides">
+    <!-- slides injected by home.js -->
+  </div>
+  <div class="hero-dots" id="heroDots"></div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Shop by shelf</h2>
+      <p>Four collections, one display case.</p>
+    </div>
+    <div class="shelf" data-reveal>
+      <a class="shelf-card" href="products.html?category=Figurines"><span>Figurines</span><br><small>Hand-finished collectibles</small></a>
+      <a class="shelf-card" href="products.html?category=Toys"><span>Toys</span><br><small>Playroom favourites</small></a>
+      <a class="shelf-card" href="products.html?category=Board+Games"><span>Board Games</span><br><small>Game-night staples</small></a>
+      <a class="shelf-card" href="products.html?category=Diecast+Cars"><span>Diecast Cars</span><br><small>Scale-model garage</small></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>Featured this week</h2>
+      <a href="products.html" class="btn btn-ghost">View all products</a>
+    </div>
+    <div class="product-grid" id="featuredGrid" data-reveal></div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container" style="text-align:center;" data-reveal>
+    <h2>Ready to start collecting?</h2>
+    <p style="max-width:52ch;margin:0 auto 24px;">Browse the full catalogue, filter by shelf, and build a cart that ships straight to your display case.</p>
+    <a href="products.html" class="btn btn-marigold">Shop Now</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand" style="margin-bottom:12px;"><span class="brand-mark">TH</span>Toy Haven</a>
+        <p style="max-width:32ch;font-size:0.88rem;">A shelf-first shop for figurines, toys, board games and diecast cars.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html?category=Figurines">Figurines</a></li>
+          <li><a href="products.html?category=Toys">Toys</a></li>
+          <li><a href="products.html?category=Board+Games">Board Games</a></li>
+          <li><a href="products.html?category=Diecast+Cars">Diecast Cars</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Account</h4>
+        <ul>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="wishlist.html">Wishlist</a></li>
+          <li><a href="feedback.html">Support &amp; FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Stay in the loop</h4>
+        <p style="font-size:0.85rem;">New arrivals, restocks, and shelf drops.</p>
+        <form class="newsletter-form js-newsletter-form">
+          <label for="newsletterEmail" class="visually-hidden">Email address</label>
+          <input id="newsletterEmail" type="email" placeholder="you@example.com" required>
+          <button type="submit" class="btn btn-marigold" style="padding:10px 18px;">Join</button>
+        </form>
+        <p class="newsletter-note js-newsletter-note"></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="js-year"></span> Toy Haven. All rights reserved.</span>
+      <span>Built for collectors, by collectors.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
